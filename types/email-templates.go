@@ -10,4 +10,5 @@ const (
 	EmailTemplateExportComparator EmailTemplate = "export-comparator"
 	EmailTemplateFeedSynchro      EmailTemplate = "feed-synchro"
 	EmailTemplateFeedGeneration   EmailTemplate = "feed-generation"
+	EmailTemplateProductAiSuccess EmailTemplate = "product_ai_success"
 )
