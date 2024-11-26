@@ -35,7 +35,7 @@ func (s *Service) SendEmail(emailTo, language string, template types.EmailTempla
 	return err
 }
 
-func (s *Service) SendShoppingImport(feedId int32, hash string) error {
+func (s *Service) SendShoppingImport(feedId int32) error {
 	_, err := s.cli.Topic("export-comparator").Publish(context.Background(), &pubsub.Message{
 		Data: []byte(strconv.Itoa(int(feedId))),
 	}).Get(context.Background())
